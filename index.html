@@ -3,14 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image" href="mad.png">
     <link
   href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css"
-  rel="stylesheet"
-/>
+  rel="stylesheet"/>
 
     <link rel="stylesheet" href="styles.css" />
-   
     <title>Madhyam Nepal</title>
   </head>
   <body>
@@ -27,17 +24,20 @@
         <li class="link"><a href="#comp">Company</a></li>
         <li class="link"><a href="#team">Team</a></li>
         <li class="link"><a href="#cont">Contact Us</a></li>
+        <li><a href="https://www.facebook.com/Madhyamnepal" target="_blank"> <span><i class="ri-facebook-fill"></i></i></span></a></li>
+        <li><a href="https://www.instagram.com/madhyamnepal/" target="_blank"> <span><i class="ri-instagram-line"></i></i></span></a></li>
       </ul>
       <button class="btn"><a href="https://calendly.com/madhyam-np/30min" style="text-decoration: none; color: white;">Schedule Meet</a></button>
     </nav>
     <header class="section__container header__container">
       <h1 class="section__header">
-       Your vision, our Mission, your  <span>Digital Future </span>
+        Your vision, Our Mission,  <br/>
+         Your <span > Digital Future </span>
       </h1>
       <p>
         Madhyam" is a dynamic digital agency dedicated to empowering businesses with innovative and result-driven strategies.We specialize in Social Media Marketing, Content Marketing, Meta Ads, Website Design and Development, Graphic Design and Branding, Video Marketing, Influencer Marketing, and Lead Generation Campaigns.
       </p>
-    
+      <!-- <button class="btn">Know More</button> -->
     </header>
 
     <section class="section__container service__container" id="serv">
@@ -159,20 +159,33 @@ Our mission is to connect brands with their target audiences effectively, enabli
         <img src="madhyam logo-11.jpg" alt="template" />
       </div>
     </section>
-
-    <section class="section__container team__container" id="team">
+    <h2 class="section__header"  id="team">Founder  and C.E.O</h2>
+    <section class="section__container template__container" id="comp">
+      <div class="template__content">
+        <!-- <p class="section__subheader"></p> -->
+        <h2 class="section__header">Sandesh Chhetri(Founder)</h2><br><h3></h3>
+        <p class="description">
+          As the founder of Madhyam Nepal, I’m passionate about helping businesses thrive in the digital world. We offer personalized solutions that drive growth through innovation, strategy, and collaboration, empowering brands to connect with their audiences and achieve lasting success.
+        </p>
+        <!-- <button class="btn"><a href="">Vi</a></button> -->
+      </div>
+      <div class="template__image">
+        <img src="assets/CEO.jpeg" alt="template" />
+      </div>
+    </section>
+    <section class="section__container team__container">
       <!-- <p class="section__subheader"></p> -->
-      <h2 class="section__header">Our Team</h2>
+<!--     
       <div class="team__grid">
         <div class="team__card">
           <img src="assets/CEO.jpeg" alt="team" />
-          <h5>Sandesh Chhetri</h5>
-          <h4>Founder & CEO</h4>
+          <h5></h5>
+          <h4></h4>
           <p>
-            As the founder of Madhyam Nepal, I’m passionate about helping businesses thrive in the digital world. We offer personalized solutions that drive growth through innovation, strategy, and collaboration, empowering brands to connect with their audiences and achieve lasting success.
-          </p>
-        </div><!--  
-        <div class="team__card">
+            
+          </p> -->
+        </div>
+        <!-- <div class="team__card">
           <img src="assets/x" alt="team" />
           <h5>X</h5>
           <h4>x</h4>
@@ -187,8 +200,7 @@ Our mission is to connect brands with their target audiences effectively, enabli
           <p>
             x
           </p>
-        </div>
-        -->
+        </div> -->
       </div>
     </section>
 
@@ -292,34 +304,12 @@ Our mission is to connect brands with their target audiences effectively, enabli
     <div class="section__container footer__bar">
       <p>Copyright © 2025 Madhyam Nepal. All rights reserved.</p>
       <div class="socials">
-        <span><i class="ri-facebook-fill"></i></span>
+       <a href="https://www.facebook.com/Madhyamnepal" target="_blank"> <span><i class="ri-facebook-fill"></i></i></span></a>
         <!-- <span><i class="ri-twitter-fill"></i></span> -->
-        <span><i class="ri-instagram-line"></i></span>
-        <span><i class="ri-youtube-fill"></i></span>
+       <a href="https://www.instagram.com/madhyamnepal/" target="_blank"> <span><i class="ri-instagram-line"></i></i></span></a>
+        <!-- <span><i class="ri-youtube-fill"></i></span> -->
       </div>
     </div>
-    <script>
-     const questionBoxes = document.querySelectorAll(".question__box");
-
-  questionBoxes.forEach((box) => {
-    const title = box.querySelector(".title");
-
-    title.addEventListener("click", () => {
-      box.classList.toggle("active");
-      questionBoxes.forEach((otherBox) => {
-        if (otherBox !== box) {
-          otherBox.classList.remove("active");
-        }
-      });
-    });
-  });
-      const hamburger = document.querySelector(".hamburger-menu");
-      const navLinks = document.querySelector(".nav__links");
-
-      hamburger.addEventListener("click", () => {
-        navLinks.classList.toggle("show");
-        hamburger.classList.toggle("active");
-      });
-      </script>
+    <script src="script.js"></script>
   </body>
 </html>
